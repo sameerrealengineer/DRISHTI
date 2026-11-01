@@ -1,0 +1,58 @@
+{
+  "key": "titli",
+  "note": "Illustrative list of blocks reported affected, with the hour (relative to landfall) flooding/damage was observed. Compiled for demo; verify against OSDMA damage records.",
+  "affected": [
+    {
+      "area": "purushottampur",
+      "impact_t": 8
+    },
+    {
+      "area": "patrapur",
+      "impact_t": 2
+    },
+    {
+      "area": "chikiti",
+      "impact_t": 2
+    },
+    {
+      "area": "sanakhemundi",
+      "impact_t": 4
+    },
+    {
+      "area": "aska",
+      "impact_t": 8
+    },
+    {
+      "area": "ganjam",
+      "impact_t": 10
+    },
+    {
+      "area": "hinjilicut",
+      "impact_t": 6
+    },
+    {
+      "area": "kabisuryanagar",
+      "impact_t": 8
+    },
+    {
+      "area": "polasara",
+      "impact_t": 10
+    },
+    {
+      "area": "digapahandi",
+      "impact_t": 4
+    },
+    {
+      "area": "kukudakhandi",
+      "impact_t": 3
+    },
+    {
+      "area": "rangeilunda",
+      "impact_t": 2
+    },
+    {
+      "area": "sorada",
+      "impact_t": 10
+    }
+  ]
+}

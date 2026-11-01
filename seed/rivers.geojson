@@ -1,0 +1,125 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Rushikulya",
+    "source": "schematic_approx"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      84.38,
+      19.98
+     ],
+     [
+      84.55,
+      19.88
+     ],
+     [
+      84.66,
+      19.7
+     ],
+     [
+      84.78,
+      19.58
+     ],
+     [
+      84.89,
+      19.52
+     ],
+     [
+      85.07,
+      19.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Badanadi",
+    "source": "schematic_approx"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      84.42,
+      19.72
+     ],
+     [
+      84.55,
+      19.65
+     ],
+     [
+      84.66,
+      19.6
+     ],
+     [
+      84.72,
+      19.58
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Ghodahada",
+    "source": "schematic_approx"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      84.4,
+      19.5
+     ],
+     [
+      84.57,
+      19.37
+     ],
+     [
+      84.7,
+      19.3
+     ],
+     [
+      84.86,
+      19.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bahuda",
+    "source": "schematic_approx"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      84.45,
+      19.15
+     ],
+     [
+      84.58,
+      19.12
+     ],
+     [
+      84.7,
+      19.1
+     ],
+     [
+      84.8,
+      19.08
+     ]
+    ]
+   }
+  }
+ ]
+}

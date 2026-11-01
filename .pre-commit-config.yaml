@@ -1,0 +1,28 @@
+# pip install pre-commit && pre-commit install
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+        exclude: ^seed/scenarios/
+      - id: check-json
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ["--maxkb=1024"]
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.4
+    hooks:
+      - id: ruff
+        args: ["--fix", "--config", "services/api/pyproject.toml"]
+      - id: ruff-format
+        args: ["--config", "services/api/pyproject.toml"]
+  - repo: local
+    hooks:
+      - id: web-lint
+        name: eslint + prettier + tsc (apps/web)
+        entry: bash -c 'cd apps/web && npm run -s lint && npm run -s format:check && npm run -s typecheck'
+        language: system
+        files: ^apps/web/
+        pass_filenames: false
+      # dart format is added with the Flutter apps (M9/M10).

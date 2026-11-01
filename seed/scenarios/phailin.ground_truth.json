@@ -1,0 +1,58 @@
+{
+  "key": "phailin",
+  "note": "Illustrative list of blocks reported affected, with the hour (relative to landfall) flooding/damage was observed. Compiled for demo; verify against OSDMA damage records.",
+  "affected": [
+    {
+      "area": "ganjam",
+      "impact_t": 0
+    },
+    {
+      "area": "chhatrapur",
+      "impact_t": 0
+    },
+    {
+      "area": "rangeilunda",
+      "impact_t": 0
+    },
+    {
+      "area": "khallikote",
+      "impact_t": 1
+    },
+    {
+      "area": "kukudakhandi",
+      "impact_t": 1
+    },
+    {
+      "area": "purushottampur",
+      "impact_t": 3
+    },
+    {
+      "area": "patrapur",
+      "impact_t": 2
+    },
+    {
+      "area": "chikiti",
+      "impact_t": 2
+    },
+    {
+      "area": "hinjilicut",
+      "impact_t": 3
+    },
+    {
+      "area": "kabisuryanagar",
+      "impact_t": 3
+    },
+    {
+      "area": "polasara",
+      "impact_t": 3
+    },
+    {
+      "area": "beguniapada",
+      "impact_t": 2
+    },
+    {
+      "area": "digapahandi",
+      "impact_t": 3
+    }
+  ]
+}

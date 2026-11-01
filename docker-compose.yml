@@ -1,0 +1,83 @@
+# DRISHTI Ganjam — full stack. `make up` (or `docker compose up --build`).
+# Runs fully offline in DEMO MODE: no external calls, simulated SMS/push.
+x-api-env: &api-env
+  DRISHTI_MODE: ${DRISHTI_MODE:-demo}
+  DATABASE_URL: postgresql+psycopg://drishti:drishti@db:5432/drishti
+  REDIS_URL: redis://redis:6379/0
+  JWT_SECRET: ${JWT_SECRET:-change-me}
+  PHONE_PEPPER: ${PHONE_PEPPER:-change-me-pepper}
+  S3_ENDPOINT: http://minio:9000
+  S3_BUCKET: drishti
+  S3_KEY: ${S3_KEY:-minio}
+  S3_SECRET: ${S3_SECRET:-minio123}
+  SMS_PROVIDER: ${SMS_PROVIDER:-simulated}
+  WHATSAPP_PROVIDER: ${WHATSAPP_PROVIDER:-simulated}
+  AUTO_ASSIGN_SECONDS: ${AUTO_ASSIGN_SECONDS:-300}
+  DEFAULT_LANGUAGE: ${DEFAULT_LANGUAGE:-or}
+  CORS_ORIGINS: http://localhost:8080,http://localhost:5173
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: drishti
+      POSTGRES_PASSWORD: drishti
+      POSTGRES_DB: drishti
+    volumes: [dbdata:/var/lib/postgresql/data]
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U drishti"]
+      interval: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 20
+
+  minio:
+    image: minio/minio:RELEASE.2024-12-18T13-15-44Z
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${S3_KEY:-minio}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET:-minio123}
+    volumes: [miniodata:/data]
+    ports: ["9000:9000", "9001:9001"]
+
+  api:
+    build: { context: ., dockerfile: services/api/Dockerfile }
+    environment: *api-env
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_healthy }
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz')"]
+      interval: 10s
+      retries: 30
+
+  worker:
+    build: { context: ., dockerfile: services/api/Dockerfile }
+    command: celery -A app.worker.celery_app worker -l info
+    environment: *api-env
+    depends_on:
+      api: { condition: service_healthy }
+
+  beat:
+    build: { context: ., dockerfile: services/api/Dockerfile }
+    command: celery -A app.worker.celery_app beat -l info
+    environment: *api-env
+    depends_on:
+      api: { condition: service_healthy }
+
+  web:
+    build: { context: ., dockerfile: apps/web/Dockerfile }
+    depends_on: [api]
+    ports: ["8080:80"]
+
+volumes:
+  dbdata:
+  miniodata:

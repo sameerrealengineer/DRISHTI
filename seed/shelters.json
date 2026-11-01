@@ -1,0 +1,929 @@
+{
+  "_note": "SAMPLE data, not the official MPCS list. UI must show a 'sample' badge until real shelters are imported (scripts/import_shelters.py).",
+  "shelters": [
+    {
+      "code": "MPCS-ASKA-1",
+      "name": "MPCS Aska-1",
+      "type": "MPCS",
+      "block": "aska",
+      "lat": 19.5819,
+      "lon": 84.69,
+      "capacity": 400,
+      "facilities": [
+        "generator",
+        "kitchen",
+        "water"
+      ],
+      "incharge_name": "In-charge Aska 1",
+      "incharge_phone": "+919000067889",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-ASKA-2",
+      "name": "MPCS Aska-2",
+      "type": "MPCS",
+      "block": "aska",
+      "lat": 19.6024,
+      "lon": 84.6378,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Aska 2",
+      "incharge_phone": "+919000091869",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BEGUNI-1",
+      "name": "MPCS Beguniapada-1",
+      "type": "MPCS",
+      "block": "beguniapada",
+      "lat": 19.7389,
+      "lon": 84.8844,
+      "capacity": 600,
+      "facilities": [
+        "first_aid",
+        "kitchen",
+        "water"
+      ],
+      "incharge_name": "In-charge Beguniapada 1",
+      "incharge_phone": "+919000065053",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BEGUNI-2",
+      "name": "MPCS Beguniapada-2",
+      "type": "MPCS",
+      "block": "beguniapada",
+      "lat": 19.6969,
+      "lon": 84.9795,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Beguniapada 2",
+      "incharge_phone": "+919000038459",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BEGUNI-3",
+      "name": "MPCS Beguniapada-3",
+      "type": "school",
+      "block": "beguniapada",
+      "lat": 19.6743,
+      "lon": 84.8818,
+      "capacity": 1000,
+      "facilities": [
+        "first_aid",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Beguniapada 3",
+      "incharge_phone": "+919000061889",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BELLAG-1",
+      "name": "MPCS Bellaguntha-1",
+      "type": "MPCS",
+      "block": "bellaguntha",
+      "lat": 19.8897,
+      "lon": 84.6599,
+      "capacity": 500,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Bellaguntha 1",
+      "incharge_phone": "+919000034365",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BELLAG-2",
+      "name": "MPCS Bellaguntha-2",
+      "type": "MPCS",
+      "block": "bellaguntha",
+      "lat": 19.8639,
+      "lon": 84.6499,
+      "capacity": 400,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Bellaguntha 2",
+      "incharge_phone": "+919000095419",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BHANJA-1",
+      "name": "MPCS Bhanjanagar-1",
+      "type": "MPCS",
+      "block": "bhanjanagar",
+      "lat": 19.9311,
+      "lon": 84.5499,
+      "capacity": 600,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen"
+      ],
+      "incharge_name": "In-charge Bhanjanagar 1",
+      "incharge_phone": "+919000084366",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BHANJA-2",
+      "name": "MPCS Bhanjanagar-2",
+      "type": "MPCS",
+      "block": "bhanjanagar",
+      "lat": 19.9447,
+      "lon": 84.5546,
+      "capacity": 500,
+      "facilities": [
+        "generator",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Bhanjanagar 2",
+      "incharge_phone": "+919000025944",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BUGUDA-1",
+      "name": "MPCS Buguda-1",
+      "type": "MPCS",
+      "block": "buguda",
+      "lat": 19.7812,
+      "lon": 84.811,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "water"
+      ],
+      "incharge_name": "In-charge Buguda 1",
+      "incharge_phone": "+919000092219",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-BUGUDA-2",
+      "name": "MPCS Buguda-2",
+      "type": "MPCS",
+      "block": "buguda",
+      "lat": 19.8516,
+      "lon": 84.7797,
+      "capacity": 400,
+      "facilities": [
+        "first_aid",
+        "generator"
+      ],
+      "incharge_name": "In-charge Buguda 2",
+      "incharge_phone": "+919000034644",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-CHHATR-1",
+      "name": "MPCS Chhatrapur-1",
+      "type": "MPCS",
+      "block": "chhatrapur",
+      "lat": 19.3757,
+      "lon": 84.9791,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Chhatrapur 1",
+      "incharge_phone": "+919000028990",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-CHHATR-2",
+      "name": "MPCS Chhatrapur-2",
+      "type": "MPCS",
+      "block": "chhatrapur",
+      "lat": 19.3395,
+      "lon": 84.9821,
+      "capacity": 1500,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Chhatrapur 2",
+      "incharge_phone": "+919000047523",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-CHHATR-3",
+      "name": "MPCS Chhatrapur-3",
+      "type": "school",
+      "block": "chhatrapur",
+      "lat": 19.3987,
+      "lon": 85.0039,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Chhatrapur 3",
+      "incharge_phone": "+919000088461",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-CHIKIT-1",
+      "name": "MPCS Chikiti-1",
+      "type": "MPCS",
+      "block": "chikiti",
+      "lat": 19.1671,
+      "lon": 84.5801,
+      "capacity": 1200,
+      "facilities": [
+        "generator",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Chikiti 1",
+      "incharge_phone": "+919000035008",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-CHIKIT-2",
+      "name": "MPCS Chikiti-2",
+      "type": "MPCS",
+      "block": "chikiti",
+      "lat": 19.163,
+      "lon": 84.6113,
+      "capacity": 600,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Chikiti 2",
+      "incharge_phone": "+919000064148",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-CHIKIT-3",
+      "name": "MPCS Chikiti-3",
+      "type": "school",
+      "block": "chikiti",
+      "lat": 19.1514,
+      "lon": 84.6533,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator"
+      ],
+      "incharge_name": "In-charge Chikiti 3",
+      "incharge_phone": "+919000098181",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-DHARAK-1",
+      "name": "MPCS Dharakote-1",
+      "type": "MPCS",
+      "block": "dharakote",
+      "lat": 19.7138,
+      "lon": 84.4685,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Dharakote 1",
+      "incharge_phone": "+919000034905",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-DHARAK-2",
+      "name": "MPCS Dharakote-2",
+      "type": "MPCS",
+      "block": "dharakote",
+      "lat": 19.6383,
+      "lon": 84.5234,
+      "capacity": 400,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Dharakote 2",
+      "incharge_phone": "+919000037055",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-DIGAPA-1",
+      "name": "MPCS Digapahandi-1",
+      "type": "MPCS",
+      "block": "digapahandi",
+      "lat": 19.3229,
+      "lon": 84.5253,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Digapahandi 1",
+      "incharge_phone": "+919000072770",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-DIGAPA-2",
+      "name": "MPCS Digapahandi-2",
+      "type": "MPCS",
+      "block": "digapahandi",
+      "lat": 19.3652,
+      "lon": 84.576,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator"
+      ],
+      "incharge_name": "In-charge Digapahandi 2",
+      "incharge_phone": "+919000012206",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-GANJAM-1",
+      "name": "MPCS Ganjam-1",
+      "type": "MPCS",
+      "block": "ganjam",
+      "lat": 19.3854,
+      "lon": 85.0355,
+      "capacity": 600,
+      "facilities": [
+        "first_aid",
+        "kitchen"
+      ],
+      "incharge_name": "In-charge Ganjam 1",
+      "incharge_phone": "+919000015787",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-GANJAM-2",
+      "name": "MPCS Ganjam-2",
+      "type": "MPCS",
+      "block": "ganjam",
+      "lat": 19.4383,
+      "lon": 85.0198,
+      "capacity": 600,
+      "facilities": [
+        "generator",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Ganjam 2",
+      "incharge_phone": "+919000057486",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-GANJAM-3",
+      "name": "MPCS Ganjam-3",
+      "type": "school",
+      "block": "ganjam",
+      "lat": 19.3707,
+      "lon": 84.9915,
+      "capacity": 1500,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen"
+      ],
+      "incharge_name": "In-charge Ganjam 3",
+      "incharge_phone": "+919000038295",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-HINJIL-1",
+      "name": "MPCS Hinjilicut-1",
+      "type": "MPCS",
+      "block": "hinjilicut",
+      "lat": 19.4809,
+      "lon": 84.7613,
+      "capacity": 600,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Hinjilicut 1",
+      "incharge_phone": "+919000038269",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-HINJIL-2",
+      "name": "MPCS Hinjilicut-2",
+      "type": "MPCS",
+      "block": "hinjilicut",
+      "lat": 19.5206,
+      "lon": 84.7159,
+      "capacity": 400,
+      "facilities": [
+        "generator",
+        "water"
+      ],
+      "incharge_name": "In-charge Hinjilicut 2",
+      "incharge_phone": "+919000041927",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-JAGANN-1",
+      "name": "MPCS Jagannathprasad-1",
+      "type": "MPCS",
+      "block": "jagannathprasad",
+      "lat": 19.9994,
+      "lon": 84.469,
+      "capacity": 400,
+      "facilities": [
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Jagannathprasad 1",
+      "incharge_phone": "+919000062508",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-JAGANN-2",
+      "name": "MPCS Jagannathprasad-2",
+      "type": "MPCS",
+      "block": "jagannathprasad",
+      "lat": 19.9213,
+      "lon": 84.4256,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Jagannathprasad 2",
+      "incharge_phone": "+919000075335",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-KABISU-1",
+      "name": "MPCS Kabisuryanagar-1",
+      "type": "MPCS",
+      "block": "kabisuryanagar",
+      "lat": 19.6143,
+      "lon": 84.8059,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Kabisuryanagar 1",
+      "incharge_phone": "+919000029382",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-KABISU-2",
+      "name": "MPCS Kabisuryanagar-2",
+      "type": "MPCS",
+      "block": "kabisuryanagar",
+      "lat": 19.6206,
+      "lon": 84.7472,
+      "capacity": 500,
+      "facilities": [
+        "first_aid",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Kabisuryanagar 2",
+      "incharge_phone": "+919000053090",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-KHALLI-1",
+      "name": "MPCS Khallikote-1",
+      "type": "MPCS",
+      "block": "khallikote",
+      "lat": 19.6173,
+      "lon": 85.0928,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Khallikote 1",
+      "incharge_phone": "+919000084066",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-KHALLI-2",
+      "name": "MPCS Khallikote-2",
+      "type": "MPCS",
+      "block": "khallikote",
+      "lat": 19.6502,
+      "lon": 85.1046,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "water"
+      ],
+      "incharge_name": "In-charge Khallikote 2",
+      "incharge_phone": "+919000099096",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-KHALLI-3",
+      "name": "MPCS Khallikote-3",
+      "type": "school",
+      "block": "khallikote",
+      "lat": 19.585,
+      "lon": 85.1293,
+      "capacity": 1500,
+      "facilities": [
+        "generator",
+        "water"
+      ],
+      "incharge_name": "In-charge Khallikote 3",
+      "incharge_phone": "+919000013633",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-KUKUDA-1",
+      "name": "MPCS Kukudakhandi-1",
+      "type": "MPCS",
+      "block": "kukudakhandi",
+      "lat": 19.3184,
+      "lon": 84.803,
+      "capacity": 1500,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Kukudakhandi 1",
+      "incharge_phone": "+919000028643",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-KUKUDA-2",
+      "name": "MPCS Kukudakhandi-2",
+      "type": "MPCS",
+      "block": "kukudakhandi",
+      "lat": 19.2841,
+      "lon": 84.8322,
+      "capacity": 1000,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Kukudakhandi 2",
+      "incharge_phone": "+919000045550",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-KUKUDA-3",
+      "name": "MPCS Kukudakhandi-3",
+      "type": "school",
+      "block": "kukudakhandi",
+      "lat": 19.2931,
+      "lon": 84.7699,
+      "capacity": 1500,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Kukudakhandi 3",
+      "incharge_phone": "+919000089406",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-PATRAP-1",
+      "name": "MPCS Patrapur-1",
+      "type": "MPCS",
+      "block": "patrapur",
+      "lat": 19.1491,
+      "lon": 84.667,
+      "capacity": 1500,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Patrapur 1",
+      "incharge_phone": "+919000086101",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-PATRAP-2",
+      "name": "MPCS Patrapur-2",
+      "type": "MPCS",
+      "block": "patrapur",
+      "lat": 19.1129,
+      "lon": 84.6958,
+      "capacity": 800,
+      "facilities": [
+        "generator",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Patrapur 2",
+      "incharge_phone": "+919000051535",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-PATRAP-3",
+      "name": "MPCS Patrapur-3",
+      "type": "school",
+      "block": "patrapur",
+      "lat": 19.1073,
+      "lon": 84.6426,
+      "capacity": 800,
+      "facilities": [
+        "generator",
+        "kitchen"
+      ],
+      "incharge_name": "In-charge Patrapur 3",
+      "incharge_phone": "+919000058518",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-POLASA-1",
+      "name": "MPCS Polasara-1",
+      "type": "MPCS",
+      "block": "polasara",
+      "lat": 19.7197,
+      "lon": 84.8224,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "kitchen"
+      ],
+      "incharge_name": "In-charge Polasara 1",
+      "incharge_phone": "+919000038541",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-POLASA-2",
+      "name": "MPCS Polasara-2",
+      "type": "MPCS",
+      "block": "polasara",
+      "lat": 19.6623,
+      "lon": 84.8367,
+      "capacity": 500,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "water"
+      ],
+      "incharge_name": "In-charge Polasara 2",
+      "incharge_phone": "+919000028929",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-PURUSH-1",
+      "name": "MPCS Purushottampur-1",
+      "type": "MPCS",
+      "block": "purushottampur",
+      "lat": 19.5338,
+      "lon": 84.8427,
+      "capacity": 1500,
+      "facilities": [
+        "first_aid",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Purushottampur 1",
+      "incharge_phone": "+919000024954",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-PURUSH-2",
+      "name": "MPCS Purushottampur-2",
+      "type": "MPCS",
+      "block": "purushottampur",
+      "lat": 19.4874,
+      "lon": 84.9278,
+      "capacity": 1200,
+      "facilities": [
+        "kitchen",
+        "water"
+      ],
+      "incharge_name": "In-charge Purushottampur 2",
+      "incharge_phone": "+919000033292",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-PURUSH-3",
+      "name": "MPCS Purushottampur-3",
+      "type": "school",
+      "block": "purushottampur",
+      "lat": 19.4749,
+      "lon": 84.8843,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Purushottampur 3",
+      "incharge_phone": "+919000038397",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-RANGEI-1",
+      "name": "MPCS Rangeilunda-1",
+      "type": "MPCS",
+      "block": "rangeilunda",
+      "lat": 19.2002,
+      "lon": 84.8873,
+      "capacity": 1500,
+      "facilities": [
+        "generator",
+        "water"
+      ],
+      "incharge_name": "In-charge Rangeilunda 1",
+      "incharge_phone": "+919000076795",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-RANGEI-2",
+      "name": "MPCS Rangeilunda-2",
+      "type": "MPCS",
+      "block": "rangeilunda",
+      "lat": 19.1911,
+      "lon": 84.8539,
+      "capacity": 1200,
+      "facilities": [
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Rangeilunda 2",
+      "incharge_phone": "+919000063327",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-RANGEI-3",
+      "name": "MPCS Rangeilunda-3",
+      "type": "school",
+      "block": "rangeilunda",
+      "lat": 19.2043,
+      "lon": 84.8924,
+      "capacity": 600,
+      "facilities": [
+        "generator",
+        "kitchen"
+      ],
+      "incharge_name": "In-charge Rangeilunda 3",
+      "incharge_phone": "+919000065676",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-SANAKH-1",
+      "name": "MPCS Sanakhemundi-1",
+      "type": "MPCS",
+      "block": "sanakhemundi",
+      "lat": 19.4999,
+      "lon": 84.4728,
+      "capacity": 500,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Sanakhemundi 1",
+      "incharge_phone": "+919000077176",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-SANAKH-2",
+      "name": "MPCS Sanakhemundi-2",
+      "type": "MPCS",
+      "block": "sanakhemundi",
+      "lat": 19.4949,
+      "lon": 84.4791,
+      "capacity": 500,
+      "facilities": [
+        "first_aid",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Sanakhemundi 2",
+      "incharge_phone": "+919000026002",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-SHERAG-1",
+      "name": "MPCS Sheragada-1",
+      "type": "MPCS",
+      "block": "sheragada",
+      "lat": 19.4824,
+      "lon": 84.6644,
+      "capacity": 400,
+      "facilities": [
+        "generator",
+        "kitchen",
+        "ramp"
+      ],
+      "incharge_name": "In-charge Sheragada 1",
+      "incharge_phone": "+919000077013",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-SHERAG-2",
+      "name": "MPCS Sheragada-2",
+      "type": "MPCS",
+      "block": "sheragada",
+      "lat": 19.5486,
+      "lon": 84.6039,
+      "capacity": 400,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Sheragada 2",
+      "incharge_phone": "+919000033320",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-SORADA-1",
+      "name": "MPCS Sorada-1",
+      "type": "MPCS",
+      "block": "sorada",
+      "lat": 19.7136,
+      "lon": 84.4263,
+      "capacity": 400,
+      "facilities": [
+        "first_aid",
+        "generator"
+      ],
+      "incharge_name": "In-charge Sorada 1",
+      "incharge_phone": "+919000015738",
+      "status": "ready"
+    },
+    {
+      "code": "MPCS-SORADA-2",
+      "name": "MPCS Sorada-2",
+      "type": "MPCS",
+      "block": "sorada",
+      "lat": 19.7146,
+      "lon": 84.4113,
+      "capacity": 800,
+      "facilities": [
+        "first_aid",
+        "generator",
+        "kitchen",
+        "ramp",
+        "water"
+      ],
+      "incharge_name": "In-charge Sorada 2",
+      "incharge_phone": "+919000089259",
+      "status": "ready"
+    }
+  ]
+}

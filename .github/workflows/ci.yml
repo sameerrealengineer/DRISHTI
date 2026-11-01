@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "claude/**"]
+  pull_request:
+
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_USER: drishti
+          POSTGRES_PASSWORD: drishti
+          POSTGRES_DB: drishti_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U drishti" --health-interval 5s --health-retries 20
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+    defaults:
+      run:
+        working-directory: services/api
+    env:
+      TEST_DATABASE_URL: postgresql+psycopg://drishti:drishti@localhost:5432/drishti_test
+      REDIS_URL: redis://localhost:6379/0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+        with:
+          version: "0.5.11"
+      - run: uv python install 3.11
+      - run: uv sync --frozen
+      - name: Lint
+        run: |
+          uv run ruff check app tests alembic ../../scripts ../../ml
+          uv run ruff format --check app tests alembic ../../scripts ../../ml
+      - name: Tests
+        run: uv run pytest -q
+      - name: Back-test
+        run: uv run python ../../ml/backtest/run.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: backtest-reports
+          path: reports/
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-dist
+          path: apps/web/dist
+
+  # APK builds (citizen, field) are added with M9/M10.

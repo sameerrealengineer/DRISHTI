@@ -1,0 +1,53 @@
+{
+  "_note": "DEMO MODE accounts only (PRD \u00a721.6). Citizen/volunteer OTP is 123456 in demo.",
+  "users": [
+    {
+      "name": "System Admin",
+      "role": "SUPER_ADMIN",
+      "email": "admin@drishti.local",
+      "password": "Drishti@2026"
+    },
+    {
+      "name": "DEOC Duty Officer",
+      "role": "DISTRICT_OFFICER",
+      "email": "deoc@drishti.local",
+      "password": "Drishti@2026"
+    },
+    {
+      "name": "BDO Purushottampur",
+      "role": "BLOCK_OFFICER",
+      "email": "bdo.purushottampur@drishti.local",
+      "password": "Drishti@2026",
+      "block": "purushottampur"
+    },
+    {
+      "name": "ODRAF Team 3 Leader",
+      "role": "FIELD_RESPONDER",
+      "team": "ODRAF3"
+    },
+    {
+      "name": "Shelter In-charge Purushottampur-1",
+      "role": "SHELTER_INCHARGE",
+      "email": "shelter.purushottampur1@drishti.local",
+      "password": "Drishti@2026",
+      "block": "purushottampur",
+      "shelter": "MPCS-PURUSH-1"
+    },
+    {
+      "name": "Aapda Mitra Volunteer",
+      "role": "VOLUNTEER",
+      "phone": "+919000000001",
+      "block": "purushottampur"
+    },
+    {
+      "name": "Demo Citizen",
+      "role": "CITIZEN",
+      "phone": "+919000000002",
+      "block": "purushottampur",
+      "home_label": "Ward 4, near Purushottampur",
+      "home_lat": 19.523,
+      "home_lon": 84.886,
+      "language": "or"
+    }
+  ]
+}

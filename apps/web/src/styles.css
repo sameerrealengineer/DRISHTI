@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+  background: var(--panel2);
+  border: 1px solid var(--line2);
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+button.on {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0 0 8px;
+}
+.muted {
+  color: var(--muted);
+}
+.mono {
+  font-family: var(--font-mono);
+}
+.odia {
+  font-family: "Noto Sans Oriya", var(--font-body);
+  color: var(--accent);
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+}
+.pill {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: var(--line2);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.landing {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  display: grid;
+  gap: 24px;
+}
+.landing h1 {
+  font-size: 40px;
+}
+.roles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.role:hover {
+  border-color: var(--accent);
+}
+.role.soon {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.story {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.cc {
+  padding: 12px 16px;
+  display: grid;
+  gap: 12px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand {
+  font-family: var(--font-display);
+  font-size: 20px;
+  margin-right: auto;
+}
+.status {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 99px;
+  border: 1px solid var(--line2);
+}
+.status.watch {
+  color: var(--lv-high);
+  border-color: var(--lv-high);
+}
+.status.active {
+  color: var(--lv-severe);
+  border-color: var(--lv-severe);
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.dot.ok {
+  background: var(--lv-low);
+}
+.dot.bad {
+  background: var(--lv-severe);
+}
+.timeline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.timeline input {
+  flex: 1;
+  min-width: 160px;
+  accent-color: var(--accent);
+}
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.kpi strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin-top: 4px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.priority {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  background: var(--bg2);
+}
+.row.sel {
+  border-color: var(--accent);
+}
+.ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono);
+  flex: none;
+}
+.name {
+  flex: 1;
+  display: grid;
+}
+.name small {
+  font-size: 12px;
+}
+.warn {
+  color: var(--lv-high);
+}
+.contrib {
+  display: grid;
+  gap: 8px;
+}
+.bar {
+  display: grid;
+  grid-template-columns: 80px 1fr 32px;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.track {
+  height: 8px;
+  background: var(--bg2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.fill {
+  height: 100%;
+  background: var(--accent);
+}

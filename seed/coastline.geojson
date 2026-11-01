@@ -1,0 +1,37 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bay of Bengal coast",
+    "source": "schematic_approx"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      84.8,
+      19.08
+     ],
+     [
+      84.91,
+      19.26
+     ],
+     [
+      85.05,
+      19.38
+     ],
+     [
+      85.12,
+      19.52
+     ],
+     [
+      85.2,
+      19.72
+     ]
+    ]
+   }
+  }
+ ]
+}

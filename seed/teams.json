@@ -1,0 +1,194 @@
+{
+  "_note": "Demo teams. PIN is for DEMO MODE only; it is hashed on seed.",
+  "teams": [
+    {
+      "code": "ODRAF1",
+      "name": "ODRAF Team 1",
+      "type": "ODRAF",
+      "capabilities": [
+        "boat",
+        "vehicle"
+      ],
+      "members": 12,
+      "base_block": "chhatrapur",
+      "lat": 19.36,
+      "lon": 84.98,
+      "pin": "1234"
+    },
+    {
+      "code": "ODRAF2",
+      "name": "ODRAF Team 2",
+      "type": "ODRAF",
+      "capabilities": [
+        "boat",
+        "vehicle"
+      ],
+      "members": 12,
+      "base_block": "aska",
+      "lat": 19.6,
+      "lon": 84.66,
+      "pin": "1234"
+    },
+    {
+      "code": "ODRAF3",
+      "name": "ODRAF Team 3",
+      "type": "ODRAF",
+      "capabilities": [
+        "boat",
+        "vehicle"
+      ],
+      "members": 14,
+      "base_block": "purushottampur",
+      "lat": 19.52,
+      "lon": 84.89,
+      "pin": "1234"
+    },
+    {
+      "code": "ODRAF4",
+      "name": "ODRAF Team 4",
+      "type": "ODRAF",
+      "capabilities": [
+        "boat"
+      ],
+      "members": 10,
+      "base_block": "patrapur",
+      "lat": 19.1,
+      "lon": 84.68,
+      "pin": "1234"
+    },
+    {
+      "code": "NDRF1",
+      "name": "NDRF 3rd Bn Team A",
+      "type": "NDRF",
+      "capabilities": [
+        "boat",
+        "vehicle",
+        "medical"
+      ],
+      "members": 20,
+      "base_block": "kukudakhandi",
+      "lat": 19.27,
+      "lon": 84.8,
+      "pin": "1234"
+    },
+    {
+      "code": "NDRF2",
+      "name": "NDRF 3rd Bn Team B",
+      "type": "NDRF",
+      "capabilities": [
+        "boat",
+        "vehicle"
+      ],
+      "members": 18,
+      "base_block": "ganjam",
+      "lat": 19.4,
+      "lon": 85.02,
+      "pin": "1234"
+    },
+    {
+      "code": "FIRE1",
+      "name": "Fire Service Berhampur",
+      "type": "Fire",
+      "capabilities": [
+        "vehicle"
+      ],
+      "members": 8,
+      "base_block": "kukudakhandi",
+      "lat": 19.27,
+      "lon": 84.8,
+      "pin": "1234"
+    },
+    {
+      "code": "FIRE2",
+      "name": "Fire Service Bhanjanagar",
+      "type": "Fire",
+      "capabilities": [
+        "vehicle"
+      ],
+      "members": 8,
+      "base_block": "bhanjanagar",
+      "lat": 19.93,
+      "lon": 84.57,
+      "pin": "1234"
+    },
+    {
+      "code": "FIRE3",
+      "name": "Fire Service Digapahandi",
+      "type": "Fire",
+      "capabilities": [
+        "vehicle"
+      ],
+      "members": 6,
+      "base_block": "digapahandi",
+      "lat": 19.37,
+      "lon": 84.57,
+      "pin": "1234"
+    },
+    {
+      "code": "MED1",
+      "name": "Medical Unit MKCG",
+      "type": "Medical",
+      "capabilities": [
+        "medical",
+        "vehicle"
+      ],
+      "members": 6,
+      "base_block": "kukudakhandi",
+      "lat": 19.27,
+      "lon": 84.8,
+      "pin": "1234"
+    },
+    {
+      "code": "MED2",
+      "name": "Medical Unit Aska CHC",
+      "type": "Medical",
+      "capabilities": [
+        "medical",
+        "vehicle"
+      ],
+      "members": 5,
+      "base_block": "aska",
+      "lat": 19.6,
+      "lon": 84.66,
+      "pin": "1234"
+    },
+    {
+      "code": "MED3",
+      "name": "Medical Unit Chikiti CHC",
+      "type": "Medical",
+      "capabilities": [
+        "medical",
+        "vehicle"
+      ],
+      "members": 5,
+      "base_block": "chikiti",
+      "lat": 19.2,
+      "lon": 84.62,
+      "pin": "1234"
+    },
+    {
+      "code": "VOL1",
+      "name": "Aapda Mitra Purushottampur",
+      "type": "Volunteer",
+      "capabilities": [
+        "vehicle"
+      ],
+      "members": 10,
+      "base_block": "purushottampur",
+      "lat": 19.52,
+      "lon": 84.89,
+      "pin": "1234"
+    },
+    {
+      "code": "VOL2",
+      "name": "Aapda Mitra Rangeilunda",
+      "type": "Volunteer",
+      "capabilities": [],
+      "members": 10,
+      "base_block": "rangeilunda",
+      "lat": 19.24,
+      "lon": 84.86,
+      "pin": "1234"
+    }
+  ]
+}

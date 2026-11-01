@@ -1,0 +1,65 @@
+{
+  "_note": "Only the Rushikulya @ Purushottampur danger level (16.83 m) is sourced. Others are placeholders to confirm with CWC. base/max levels are schematic bounds for the nowcast clamp.",
+  "gauges": [
+    {
+      "id": "rushikulya_purushottampur",
+      "name": "Rushikulya @ Purushottampur",
+      "river": "Rushikulya",
+      "site": "Purushottampur",
+      "area": "purushottampur",
+      "lat": 19.52,
+      "lon": 84.89,
+      "danger_level_m": 16.83,
+      "warning_level_m": 15.83,
+      "base_level_m": 9.6,
+      "max_level_m": 20.5,
+      "danger_level_sourced": true,
+      "nowcast_k": 0.03043
+    },
+    {
+      "id": "bahuda_sunapur",
+      "name": "Bahuda @ Sunapur",
+      "river": "Bahuda",
+      "site": "Sunapur",
+      "area": "rangeilunda",
+      "lat": 19.1,
+      "lon": 84.78,
+      "danger_level_m": 8.5,
+      "warning_level_m": 7.5,
+      "base_level_m": 4.2,
+      "max_level_m": 11.0,
+      "danger_level_sourced": false,
+      "nowcast_k": 0.01845
+    },
+    {
+      "id": "ghodahada_digapahandi",
+      "name": "Ghodahada @ Digapahandi",
+      "river": "Ghodahada",
+      "site": "Digapahandi",
+      "area": "digapahandi",
+      "lat": 19.37,
+      "lon": 84.57,
+      "danger_level_m": 12.0,
+      "warning_level_m": 11.0,
+      "base_level_m": 6.5,
+      "max_level_m": 14.5,
+      "danger_level_sourced": false,
+      "nowcast_k": 0.02437
+    },
+    {
+      "id": "badanadi_aska",
+      "name": "Badanadi @ Aska",
+      "river": "Badanadi",
+      "site": "Aska",
+      "area": "aska",
+      "lat": 19.6,
+      "lon": 84.66,
+      "danger_level_m": 14.2,
+      "warning_level_m": 13.2,
+      "base_level_m": 8.0,
+      "max_level_m": 17.0,
+      "danger_level_sourced": false,
+      "nowcast_k": 0.0307
+    }
+  ]
+}
